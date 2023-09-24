@@ -1,0 +1,93 @@
+{
+  "root": true,
+  "env": {
+    "es2022": true,
+    "node": true,
+    "jest": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/extensions": [".js", ".ts"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "project": "tsconfig.json"
+      }
+    }
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "sort-keys-fix",
+    "typescript-sort-keys",
+    "sonarjs",
+    "promise",
+    "prettier",
+    "jest"
+  ],
+  "extends": [
+    "standard-with-typescript",
+    "eslint:recommended",
+    "plugin:promise/recommended",
+    "plugin:import/errors",
+    "plugin:sonarjs/recommended",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:typescript-sort-keys/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "object-shorthand": "warn",
+    "typescript-sort-keys/string-enum": [
+      "warn",
+      "asc",
+      {
+        "caseSensitive": true,
+        "natural": false
+      }
+    ],
+    "typescript-sort-keys/interface": [
+      "warn",
+      "asc",
+      {
+        "caseSensitive": true,
+        "natural": false,
+        "requiredFirst": true
+      }
+    ],
+    "@typescript-eslint/ban-ts-comment": "off",
+    "no-console": "error",
+    "jest/no-disabled-tests": "off",
+    "no-useless-constructor": "off",
+    "lines-between-class-members": "off",
+    "promise/always-return": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "space-before-function-paren": "off",
+    "eslint-disable-next-line": "off",
+    "prettier/prettier": "error",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/return-await": "off",
+    "@typescript-eslint/restrict-plus-operands": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-extraneous-class": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/?(*.)+(spec|test).ts"],
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/recommended", "plugin:jest/style"]
+    }
+  ]
+}

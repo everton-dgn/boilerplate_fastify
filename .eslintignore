@@ -1,0 +1,13 @@
+.husky
+.vscode
+yarn.lock
+.idea
+.prettierignore
+.gitattributes
+coverage
+dist
+documentation
+node_modules
+.gitignore
+.eslintcache
+.jest
