@@ -26,8 +26,7 @@
     "typescript-sort-keys",
     "sonarjs",
     "promise",
-    "prettier",
-    "jest"
+    "prettier"
   ],
   "extends": [
     "standard-with-typescript",
@@ -40,8 +39,6 @@
     "plugin:typescript-sort-keys/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript",
-    "plugin:jest/recommended",
-    "plugin:jest/style",
     "plugin:prettier/recommended"
   ],
   "rules": {
@@ -82,12 +79,5 @@
     "@typescript-eslint/restrict-plus-operands": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/no-extraneous-class": "off"
-  },
-  "overrides": [
-    {
-      "files": ["**/?(*.)+(spec|test).ts"],
-      "plugins": ["jest"],
-      "extends": ["plugin:jest/recommended", "plugin:jest/style"]
-    }
-  ]
+  }
 }

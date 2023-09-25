@@ -24,7 +24,8 @@
     "noImplicitOverride": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "types": ["vitest/globals"]
   },
   "include": ["src/**/*.ts", "src/tests/@types/**/*.d.ts"]
 }

@@ -3,9 +3,7 @@ import { config } from 'dotenv'
 
 config()
 
-const app = Fastify({
-  logger: true
-})
+const app = Fastify()
 
 app.get('/', async (_req, res) => {
   void res.type('application/json').code(200)
