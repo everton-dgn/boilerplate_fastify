@@ -73,6 +73,12 @@
     "space-before-function-paren": "off",
     "eslint-disable-next-line": "off",
     "prettier/prettier": "error",
+    "@typescript-eslint/no-floating-promises": [
+      "error",
+      {
+        "ignoreVoid": false
+      }
+    ],
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/no-namespace": "off",
     "@typescript-eslint/return-await": "off",
