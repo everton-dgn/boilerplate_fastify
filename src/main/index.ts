@@ -1,27 +1,10 @@
-import { fastify } from 'fastify'
-import { config } from 'dotenv'
+import app from './app'
 
-config()
+const port = Number(process.env.APP_PORT)
 
-const app = fastify({
-  logger: true
-})
-
-app.get('/', async (_req, res) => {
-  void res.type('application/json').code(200)
-  return { message: 'Hello World!' }
-})
-
-app.get('/abc', async (_req, res) => {
-  void res.type('application/json').code(200)
-  return { message: 'abc' }
-})
-
-app.listen({ port: Number(process.env.APP_PORT) }, (err, address) => {
+app.listen({ port }, err => {
   if (err) {
     app.log.error(err)
     process.exit(1)
   }
 })
-
-export default app
