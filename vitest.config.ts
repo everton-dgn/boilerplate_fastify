@@ -8,6 +8,9 @@ export default defineConfig({
     globals: true,
     mockReset: true,
     clearMocks: true,
-    passWithNoTests: true
+    passWithNoTests: true,
+    coverage: {
+      enabled: true
+    }
   }
 })

@@ -16,10 +16,9 @@
     "check:format": "prettier --cache --check .",
     "typecheck": "tsc --project tsconfig.json --noEmit",
     "test": "vitest run",
-    "test:c": "vitest run --coverage",
     "test:w": "vitest",
-    "test:unit": "vitest run --glob=src/tests/unit/*",
-    "test:integration": "vitest run --glob=src/tests/integration/*",
+    "test:unit": "vitest run src/tests/unit",
+    "test:integration": "vitest run src/tests/integration",
     "test:ci": "vitest run",
     "check:update": "yarn upgrade-interactive --latest",
     "prepare": "node scripts/create-husky-files.mjs && husky install"
