@@ -6,9 +6,8 @@ yarn.lock
 .gitattributes
 coverage
 dist
-documentation
 node_modules
 .gitignore
 .eslintcache
-.jest
+.lintstagedrc
 vitest.config.ts

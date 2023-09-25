@@ -1,13 +1,11 @@
 .husky
 .idea
-.jest
 .vscode
 coverage
 dist
 node_modules
 .gitignore
 .gitattributes
-jest.config.js
 .eslintcache
-.jest
+.lintstagedrc
 yarn.lock

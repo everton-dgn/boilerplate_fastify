@@ -7,9 +7,9 @@
   "description": "This application is a boilerplate for complex and large systems, especially those that need to scale with security and code quality.",
   "repository": "https://github.com/everton-dgn/boilerplate_fastify",
   "scripts": {
-    "dev": "tsx watch src/main",
-    "start": "node dist",
+    "dev": "tsx watch src/main/index.ts",
     "build": "rm -rf dist && tsc -p tsconfig-build.json",
+    "start": "node dist/main/index.js",
     "lint": "eslint --cache src --ext ts,json --max-warnings=0",
     "lint:fix": "eslint --cache --fix src --ext ts,json",
     "format": "prettier --cache --write .",
