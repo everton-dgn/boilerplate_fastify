@@ -24,7 +24,7 @@ const swaggerPaths = {
   '/': {
     get: {
       summary: 'Returns a greeting message',
-      tags: ['Saudação'],
+      tags: ['greeting'],
       responses: commonResponses
     }
   },
@@ -38,7 +38,6 @@ const swaggerPaths = {
 }
 
 const swaggerOptions = {
-  prefix: '/doc',
   swagger: {
     info: swaggerInfo,
     paths: swaggerPaths
