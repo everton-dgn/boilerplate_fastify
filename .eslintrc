@@ -2,8 +2,7 @@
   "root": true,
   "env": {
     "es2022": true,
-    "node": true,
-    "jest": true
+    "node": true
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -62,7 +61,6 @@
     ],
     "@typescript-eslint/ban-ts-comment": "off",
     "no-console": "error",
-    "jest/no-disabled-tests": "off",
     "no-useless-constructor": "off",
     "lines-between-class-members": "off",
     "promise/always-return": "off",
