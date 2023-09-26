@@ -26,6 +26,7 @@ This application is a boilerplate for complex and large systems, especially thos
 - Jest
 - Supertest
 - Lints: Husky, ESlint, Stylelint, Commitlint, Lint-Staged e Prettier
+- Swagger and Swagger UI
 
 <br />
 
