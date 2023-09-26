@@ -1,12 +1,10 @@
 import Fastify from 'fastify'
-import { config } from 'dotenv'
+import 'dotenv/config'
 import swagger from '@fastify/swagger'
 import swagger_ui from '@fastify/swagger-ui'
 import swaggerOptions from 'doc/index.js'
 
-config()
-
-const app = Fastify({ logger: true })
+const app = Fastify({ logger: JSON.parse(process.env.LOGGER_ENABLED!) })
 
 await app.register(swagger, swaggerOptions)
 await app.register(swagger_ui, {
