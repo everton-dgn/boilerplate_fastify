@@ -1,4 +1,4 @@
-import request from 'tests/setup'
+import request from 'tests/setup.js'
 
 describe('Testando as rotas', () => {
   it('Deve responder com "Hello World!" em /', async () => {

@@ -11,3 +11,4 @@ node_modules
 .eslintcache
 .lintstagedrc
 vitest.config.ts
+scripts

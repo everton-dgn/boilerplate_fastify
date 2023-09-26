@@ -2,7 +2,7 @@ import Fastify from 'fastify'
 import { config } from 'dotenv'
 import swagger from '@fastify/swagger'
 import swagger_ui from '@fastify/swagger-ui'
-import swaggerOptions from 'doc'
+import swaggerOptions from 'doc/index.js'
 
 config()
 

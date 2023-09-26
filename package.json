@@ -7,9 +7,9 @@
   "description": "This application is a boilerplate for complex and large systems, especially those that need to scale with security and code quality.",
   "repository": "https://github.com/everton-dgn/boilerplate_fastify",
   "scripts": {
-    "dev": "tsx watch src/main/index.ts",
-    "build": "rm -rf dist && tsc -p tsconfig-build.json",
-    "start": "node dist/main/index.js",
+    "dev": "tsx watch src/main",
+    "build": "rm -rf dist && tsc -p tsconfig-build.json && tsc-alias -p tsconfig.json",
+    "start": "node dist/main",
     "lint": "eslint --cache src --ext ts,json --max-warnings=0",
     "lint:fix": "eslint --cache --fix src --ext ts,json",
     "format": "prettier --cache --write .",
@@ -21,7 +21,7 @@
     "test:integration": "vitest run src/tests/integration --coverage",
     "test:ci": "vitest run",
     "check:update": "yarn upgrade-interactive --latest",
-    "prepare": "node scripts/create-husky-files.mjs && husky install"
+    "prepare": "node scripts/create-husky-files.js && husky install"
   },
   "type": "module",
   "husky": {
@@ -60,6 +60,7 @@
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "supertest": "^6.3.3",
+    "tsc-alias": "^1.8.8",
     "tsx": "^3.12.10",
     "typescript": "^5.2.2",
     "vite-tsconfig-paths": "^4.2.1",
