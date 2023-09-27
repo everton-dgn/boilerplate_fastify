@@ -1,10 +1,16 @@
 import Fastify from 'fastify'
 import 'dotenv/config'
-import doc from 'doc/index.js'
+import doc from 'doc'
 
 const app = Fastify({ logger: JSON.parse(process.env.LOGGER_ENABLED!) })
 
-await doc(app)
+const initDocumentation = async () => {
+  await doc(app)
+}
+initDocumentation().catch(error => {
+  // eslint-disable-next-line no-console
+  console.error('Failed to initialize documentation:', error)
+})
 
 app.get('/', async (_req, _) => ({
   message: 'Hello World!'

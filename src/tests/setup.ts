@@ -1,5 +1,5 @@
 import supertest from 'supertest'
-import app from 'main/app.js'
+import app from 'main/app'
 
 beforeAll(async () => {
   await app.listen({ port: 5000 })

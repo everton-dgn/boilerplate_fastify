@@ -23,7 +23,6 @@
     "check:update": "yarn upgrade-interactive --latest",
     "prepare": "node scripts/create-husky-files.js && husky install"
   },
-  "type": "module",
   "husky": {
     "hooks": {
       "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true",
