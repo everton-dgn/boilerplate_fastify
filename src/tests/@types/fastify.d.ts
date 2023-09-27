@@ -1,5 +1,5 @@
 import type * as Fastify from 'fastify'
-import { type Server, type IncomingMessage, type ServerResponse } from 'http'
+import type { Server, IncomingMessage, ServerResponse } from 'http'
 
 declare global {
   namespace NodeJS {

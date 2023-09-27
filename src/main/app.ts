@@ -1,15 +1,10 @@
 import Fastify from 'fastify'
 import 'dotenv/config'
-import swagger from '@fastify/swagger'
-import swagger_ui from '@fastify/swagger-ui'
-import swaggerOptions from 'doc/index.js'
+import doc from 'doc/index.js'
 
 const app = Fastify({ logger: JSON.parse(process.env.LOGGER_ENABLED!) })
 
-await app.register(swagger, swaggerOptions)
-await app.register(swagger_ui, {
-  prefix: '/doc'
-})
+await doc(app)
 
 app.get('/', async (_req, _) => ({
   message: 'Hello World!'
