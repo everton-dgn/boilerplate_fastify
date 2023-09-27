@@ -29,9 +29,3 @@ tsconfig*info
 # linters
 .eslintcache
 .husky
-
-# others
-.bastion
-
-# database
-bastion-host-sandbox.pem
