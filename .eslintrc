@@ -41,6 +41,7 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
     "object-shorthand": "warn",
     "typescript-sort-keys/string-enum": [
       "warn",
