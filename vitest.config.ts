@@ -7,6 +7,9 @@ config({ path: '.env.test' })
 export default defineConfig({
   plugins: [tsconfigPaths()],
   test: {
+    coverage: {
+      exclude: ['src/tests/']
+    },
     environment: 'node',
     globals: true,
     mockReset: true,
