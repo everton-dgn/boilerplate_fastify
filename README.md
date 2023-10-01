@@ -35,7 +35,7 @@ This application is a boilerplate for complex and large systems, especially thos
 # :white_check_mark: Pre Requisitos
 
 - node última versão lts.
-- yarn.
+- pnpm última versão lts.
 
 <br />
 
@@ -53,7 +53,7 @@ cd boilerplate_fastify
 Instale as dependências:
 
 ```bash
-yarn
+pnpm i
 ```
 
 <br />
@@ -79,14 +79,14 @@ Disponível em `http://localhost:5000`.
 Desenvolvimento:
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 Produção:
 
 ```bash
-yarn build
-yarn start
+pnpm build
+pnpm start
 ```
 
 <br />

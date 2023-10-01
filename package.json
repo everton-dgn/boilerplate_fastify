@@ -20,7 +20,8 @@
     "test:unit": "vitest run src/tests/unit --coverage",
     "test:integration": "vitest run src/tests/integration --coverage",
     "test:ci": "vitest run",
-    "check:update": "yarn upgrade-interactive --latest",
+    "check:update": "pnpm outdated --long",
+    "update": "pnpm update",
     "prepare": "node scripts/create-husky-files.mjs && husky install"
   },
   "husky": {
@@ -35,14 +36,14 @@
     "fastify": "^4.23.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.7.1",
+    "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.7.0",
     "@faker-js/faker": "^8.1.0",
-    "@types/node": "^20.6.4",
-    "@types/supertest": "^2.0.12",
-    "@typescript-eslint/eslint-plugin": "^6.7.2",
-    "@typescript-eslint/parser": "^6.7.2",
-    "@vitest/coverage-v8": "^0.34.5",
+    "@types/node": "^20.8.0",
+    "@types/supertest": "^2.0.13",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "@vitest/coverage-v8": "^0.34.6",
     "dotenv": "^16.3.1",
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",
@@ -60,9 +61,9 @@
     "prettier": "^3.0.3",
     "supertest": "^6.3.3",
     "tsc-alias": "^1.8.8",
-    "tsx": "^3.12.10",
+    "tsx": "^3.13.0",
     "typescript": "^5.2.2",
     "vite-tsconfig-paths": "^4.2.1",
-    "vitest": "^0.34.5"
+    "vitest": "^0.34.6"
   }
 }
