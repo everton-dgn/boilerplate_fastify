@@ -2,7 +2,8 @@ import Fastify from 'fastify'
 import 'dotenv/config'
 import doc from 'doc'
 
-const app = Fastify({ logger: JSON.parse(process.env.LOGGER_ENABLED!) })
+const logger = JSON.parse(process.env.LOGGER_ENABLED || 'false')
+const app = Fastify({ logger })
 
 const initDocumentation = async () => {
   await doc(app)
