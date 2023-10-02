@@ -1,7 +1,7 @@
 {
   "**/*.ts": [
-    "pnpm format",
-    "pnpm lint:fix",
-    "pnpm test:ci related"
+    "yarn format",
+    "yarn lint:fix",
+    "yarn test:ci related"
   ]
 }
